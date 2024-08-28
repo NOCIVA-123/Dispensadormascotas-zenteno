@@ -1,0 +1,302 @@
+/* header {
+    width: 100%;
+    height: 10%;
+    border: 1px solid black;
+} */
+/* CSS */
+body {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+section {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CSS */
+footer {
+  background-color: #e46694;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
+
+.sidebar {
+  text-align: center;
+  background-color: #f7d3e9;
+  /* Color de fondo */
+  color: #ffffff; /* Color de texto */
+  padding: 20px;
+  width: 20%;
+  box-sizing: border-box;
+  border-right: 1px solid #f8f8f8; /* Borde derecho */
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.menu h2 {
+  margin-top: 0;
+  color: #ffffff; /* Color del encabezado */
+  font-size: 1.5em;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 10px 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #4b4e50; /* Color de los enlaces */
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #1abc9c; /* Color al pasar el cursor */
+}
+
+.cuadrado-icono {
+  height: 80%;
+  width: 20%;
+  background-color: black;
+}
+
+.cuadrado-info {
+  display: flex;
+  height: 20%;
+  width: 80%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(234, 231, 231, 0.1);
+}
+
+.pantalla2 > .cuadrado-info {
+  gap: 20px;
+}
+
+.pantalla3 {
+  gap: 10px;
+}
+
+.pantalla3 > button {
+  height: 50px;
+  width: 200px;
+  background-color: deeppink;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.pantalla3 > .cuadrado-info {
+  flex-direction: column;
+}
+
+.pantalla3 > .cuadrado-info > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(208, 207, 207, 0.1);
+}
+
+.pantalla3 > .cuadrado-info > div > img {
+  height: 20px;
+}
+
+.pantalla4 > .cuadrado-info {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.pantalla4 > .cuadrado-info > div > button {
+  height: 30px;
+  width: 100px;
+  background-color: deeppink;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cuadradoinfo-contenido {
+  height: 20%;
+  width: 80%;
+  background-color: deeppink;
+}
+
+.container-vista {
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container-vista-video {
+  text-align: center;
+  display: flex;
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.container-vista-video > img {
+  height: 100%;
+  width: 100%;
+  object-fit: none;
+}
+
+.container-vista-botones {
+  height: 50%;
+  width: 100%;
+}
+
+.container-vista-botones > button {
+  height: 50%;
+  width: 33%;
+  background-color: hsl(210, 2%, 63%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.container-login {
+  display: flex;
+  background-color: #496b89;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container-login > section {
+  background-color: #fffdff;
+  width: 50%;
+  height: 100%;
+}
+
+.container-login > section > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-login > section > form > button {
+  height: 50px;
+  width: 200px;
+  background-color: #e46694;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.container-login > aside {
+  background-color: #f7d3e9;
+  width: 50%;
+  height: 100%;
+}
+
+.logo-gato {
+  height: 60%;
+}
+
+.bg-pink {
+  background-color: deeppink;
+}
+
+.bg-pink {
+  background-color: deeppink;
+}
+
+/*# sourceMappingURL=style.css.map */
