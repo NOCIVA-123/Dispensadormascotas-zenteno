@@ -1,128 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Configurar Dispositivo | Empresa de Tecnología para Mascotas</title>
+    <meta name="description" content="Administre y configure dispositivos para sus mascotas con facilidad. Cambie el nombre del dispositivo, vea el historial de comidas, y más.">
+    <meta name="keywords" content="dispositivos para mascotas, configurar dispositivo, historial de comidas, administración de dispositivos">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-   
+
     <nav class="navbar navbar-expand-lg navbar-light bg-pink">
-        <a class="navbar-brand" href="pantalla2.html"><img src="../img/logo gato.jpg" alt="" height="40px"></a>
+        <a class="navbar-brand" href="pantalla2.html"><img src="../img/logo gato.jpg" alt="Logo de la empresa" height="40px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            
-            <a class="nav-item nav-link" href="pantalla4.html">Historial</a>
-            <a class="nav-item nav-link" href="pantalla2.html">Dispositivos</a>
-              </div>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="pantalla4.html">Historial</a>
+                <a class="nav-item nav-link" href="pantalla2.html">Dispositivos</a>
+            </div>
         </div>
-      </nav> 
-    
-    
-    <main class=" row" style="width: 100%;">
+    </nav>
 
-        <aside class="col-2 sidebar  d-none d-sm-block">
-            <h1>
-              Listado de Dispositivos
-            </h1>
-  
+    <main class="row" style="width: 100%;">
+        <aside class="col-2 sidebar d-none d-sm-block">
+            <h2>Listado de Dispositivos</h2>
             <ul class="list-group">
-              <li class="list-group-item"><a href="pantalla5.html" >Reiko </a></li>
-              <li class="list-group-item"><a href="pantalla5.html" >Chimuela </a></li>
-              <li class="list-group-item"><a href="pantalla5.html" >Luna </a></li>
-              <li class="list-group-item"><a href="pantalla5.html" >Luna </a></li>
-              
-  
+                <li class="list-group-item"><a href="pantalla5.html">Reiko</a></li>
+                <li class="list-group-item"><a href="pantalla5.html">Chimuela</a></li>
+                <li class="list-group-item"><a href="pantalla5.html">Luna</a></li>
+                <li class="list-group-item"><a href="pantalla5.html">Coco</a></li>
             </ul>
-  
-          
-            </aside>
-        <section class="col-10 flex justify-content-center align-content-center  p-4  overflow-scroll" >
+        </aside>
 
+        <section class="col-10 flex justify-content-center align-content-center p-4 overflow-scroll">
+            <h1>Configurar Dispositivo</h1>
 
-            <h2>Configurar Dispositivo</h2>
-            <div class=" card w-100 ">
-              <div class="row g-0">
-            
-                <div class="col 12">
-                  <div class="card-body">
-                    <h3 class="card-title">Nombre Dispositivo</h3>
-
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Nuevo Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                          <button class="btn btn-outline-dark btn-group-vertical" type="button">Cambiar Nombre</button>
+            <div class="card w-100 mb-4">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <div class="card-body">
+                            <h3 class="card-title">Cambiar Nombre del Dispositivo</h3>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Nuevo Nombre" aria-label="Nuevo Nombre del Dispositivo">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-dark" type="button">Cambiar Nombre</button>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                     </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class=" card w-100 text-center p-4">
-                <p>Ver Historial de comidas</p>
-                <a  href="pantalla4.html" class="btn btn-outline-dark btn-group-vertical"><small class="">Historial</small></a>
-               
-           
+
+            <div class="card w-100 text-center p-4 mb-4">
+                <h2>Ver Historial de Comidas</h2>
+                <a href="pantalla4.html" class="btn btn-outline-dark">Historial</a>
             </div>
-            
 
-
-            <div class=" card w-100 text-center p-4">
-                <p>Eliminar Dispositivo</p>
-                <a  href="pantalla2.html" class="btn btn-outline-dark btn-group-vertical"><small class="">Dispositivos</small></a>
+            <div class="card w-100 text-center p-4 mb-4">
+                <h2>Eliminar Dispositivo</h2>
+                <a href="pantalla2.html" class="btn btn-outline-dark">Dispositivos</a>
             </div>
-            
-
-
         </section>
-
-
-
     </main>
 
     <footer>
         <div class="footer-container">
-          <div class="footer-section">
-            <h4>Nombre de la Empresa</h4>
-            <p>1234 Calle Ficticia, Ciudad, País</p>
-            <p>Teléfono: +1 (234) 567-8900</p>
-            <p>Correo electrónico: <a href="mailto:contacto@tudominio.com">contacto@tudominio.com</a></p>
-          </div>
-          <div class="footer-section">
-            <h4>Enlaces Rápidos</h4>
-            <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Sobre Nosotros</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contacto</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h4>Síguenos en Redes Sociales</h4>
-            <p>
-              <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
-            </p>
-          </div>
-          <div class="footer-section">
-            <h4>Suscríbete a nuestro boletín</h4>
-            <p>Recibe las últimas noticias y ofertas. <a href="#">Suscribirse</a></p>
-          </div>
+            <div class="footer-section">
+                <h4>Nombre de la Empresa</h4>
+                <p>1234 Calle Ficticia, Ciudad, País</p>
+                <p>Teléfono: +1 (234) 567-8900</p>
+                <p>Correo electrónico: <a href="mailto:contacto@tudominio.com">contacto@tudominio.com</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos en Redes Sociales</h4>
+                <p>
+                    <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Suscríbete a nuestro boletín</h4>
+                <p>Recibe las últimas noticias y ofertas. <a href="#">Suscribirse</a></p>
+            </div>
         </div>
         <div class="footer-bottom">
-          <p><a href="#">Aviso de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+            <p><a href="#">Aviso de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
         </div>
-      </footer>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
