@@ -1,3 +1,9 @@
+// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+
 /* header {
     width: 100%;
     height: 10%;
@@ -339,7 +345,22 @@ footer {
 
 $theme-colors: ('primary': #f71586
 );
-  
+
+
+
+
+li >a{
+
+  text-decoration: none !important;
+  color: #c80379 !important;
+};
+
+
+
+// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Then import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-
